@@ -1,4 +1,7 @@
 <?php
+
+
+
 if (isset($_POST['LastName'])) { 
 	$lastname = $_POST['LastName']; 
 	if ($lastname == '') { unset($lastname);} 
@@ -22,40 +25,29 @@ if (isset($_POST['Email'])) {
 }
 
 if    (!preg_match("/[0-9a-z_]+@[0-9a-z_^\.]+\.[a-z]{2,3}/i", $email)) {
-	exit ("Неверно введен е-mail!");
+	exit ("РќРµРІРµСЂРЅРѕ РІРІРµРґРµРЅ Рµ-mail!");
 }
 if (empty($lastname) or empty($firstname) or empty($school) or empty($class) or empty($email)) {
-	exit ("Вы ввели не всю информацию, пожалуйста заполните все поля!");
+	exit ("Р’С‹ РІРІРµР»Рё РЅРµ РІСЃСЋ РёРЅС„РѕСЂРјР°С†РёСЋ, РїРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ!");
 }
-<?//если логин и пароль введены,то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
-$login = stripslashes($login);
-$login = htmlspecialchars($login);
 
-$password = stripslashes($password);
-$password = htmlspecialchars($password);
+// РїРѕРґРєР»СЋС‡Р°РµРјСЃСЏ Рє Р±Р°Р·Рµ
+include ("bd.php");// С„Р°Р№Р» bd.php РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІ С‚РѕР№ Р¶Рµ РїР°РїРєРµ, С‡С‚Рѕ Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, РµСЃР»Рё СЌС‚Рѕ РЅРµ С‚Р°Рє, С‚Рѕ РїСЂРѕСЃС‚Рѕ РёР·РјРµРЅРёС‚Рµ РїСѓС‚СЊ 
 
-//удаляем лишние пробелы
-$login = trim($login);
-$password = trim($password);
--?>
-
-// подключаемся к базе
-include ("bd.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
-
-// проверка на существование пользователя с таким же логином
+// РїСЂРѕРІРµСЂРєР° РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃ С‚Р°РєРёРј Р¶Рµ Р»РѕРіРёРЅРѕРј
 $result = mysql_query("SELECT id FROM users WHERE email='$email'",$db);
 $myrow = mysql_fetch_array($result);
 if (!empty($myrow['id'])) {
-	exit ("Извините, на данный email уже зарегистрирован пользователь.");
+	exit ("РР·РІРёРЅРёС‚Рµ, РЅР° РґР°РЅРЅС‹Р№ email СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ.");
 }
-// если такого нет, то сохраняем данные
-$result2 = mysql_query ("INSERT INTO users (lastname,firstname,school,class,email) VALUES('$lastname','$firstname','$school','$class','$email')");
-// Проверяем, есть ли ошибки
+// РµСЃР»Рё С‚Р°РєРѕРіРѕ РЅРµС‚, С‚Рѕ СЃРѕС…СЂР°РЅСЏРµРј РґР°РЅРЅС‹Рµ
+$result2 = mysql_query ("INSERT INTO users (lastname,firstname,school,class,email) VALUES('".mysql_real_escape_string($lastname)."','".mysql_real_escape_string($firstname)"','"mysql_real_escape_string($school)"','"mysql_real_escape_string($class)"','"mysql_real_escape_string($email)"')");
+// РџСЂРѕРІРµСЂСЏРµРј, РµСЃС‚СЊ Р»Рё РѕС€РёР±РєРё
 if ($result2=='TRUE') {
-	echo "Вы успешно зарегистрированы! Ждем вас с нетерпением на олимпиаде!";
+	echo "Р’С‹ СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅС‹! Р–РґРµРј РІР°СЃ СЃ РЅРµС‚РµСЂРїРµРЅРёРµРј РЅР° РѕР»РёРјРїРёР°РґРµ!";
 }
 
 else {
-	echo "Ошибка! Вы не зарегистрированы.";
+	echo "РћС€РёР±РєР°! Р’С‹ РЅРµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅС‹.";
 }
 ?>
