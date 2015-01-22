@@ -35,7 +35,7 @@ if (empty($lastname) or empty($firstname) or empty($school) or empty($class) or 
 	exit ("Вы ввели не всю информацию, пожалуйста заполните все поля!");
 }
 
-include ("bd.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
+include ("bd.php");
 $db=GetMyConnection();
 $result = mysql_query("SELECT id FROM users WHERE email='".mysql_real_escape_string($email)."'",$db);
 $myrow = mysql_fetch_array($result);
