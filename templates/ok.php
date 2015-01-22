@@ -18,6 +18,7 @@
     <title>Городская олимпиада по программированию ВГИ</title>
 
     <!-- Templates core CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="stylesheets/application.css" rel="stylesheet"> 
 
     <!-- Favicons -->
@@ -34,9 +35,6 @@
 
     <!-- Modernizr Scripts -->
    <!-- <script src="javascript/vendor/modernizr-2.7.1.min.js"></script> -->
-	<?php
-		include('php/registration.php');
-	?>
   </head>
   <body class="index" id="to-top">
 
@@ -44,26 +42,52 @@
     <header class="jumbotron" role="banner">
 
       <div class="container">
-		<div class="row"> 
-		
-        <br> <br> <br> <br>  <br> <br> <br> <br>  <br> 
-		<br> <br> 
-		<h1> Поздравляем вы успешно зарегистрированны, ждем вас на олимпиаде! </h1> 
+		<div class="row magic"></div>
+		<div class="row magic">
+			<div class="row">			
+				<div><h1>Поздравляем, вы успешно зарегестрированы! Ждем вас на олимпиаде!<h1></div>
+			</div><!-- row -->   
+			<div class="row">
+				<a class="btn btn-danger" href="/">Еще регистрируемся?)</a> 
+			</div> <!-- row -->
 		</div>
-		<div class="row">
-		             <a class="btn btn-danger" href="index.html">Еще регистрируемся?)</a>                     
-			<br>  <br> <br> <br> <br> <br> <br> <br> <br><br>  <br> <br> <br> 
-		</div>
-        
+		<div class="row magic"></div>
       </div> <!-- /.container -->
-	  
 
     </header> <!-- /.jumbotron -->
+
 	
 	  <section class="features-section" id="section-4">
 		<h1 align="center">Список участников</h1>
-		<p align="center"><strong>#LastName# &nbsp #FirstName# &nbsp #School#</strong></p>
-	  </section>
+		<div class="table-responsive spisok" >
+		<table class="table table-hover" >
+			<thead>
+			  <tr>
+				<th>Фамилия</th>
+				<th>Имя</th>
+				<th>Класс</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<?php
+					function GetMyConnection() {
+						global $g_link;
+						if( $g_link )
+							return $g_link;
+						$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+						mysql_select_db('olimp', $g_link) or die('Could not select database.');
+						return $g_link;
+					}
+					$db=GetMyConnection();
+					$query = mysql_query("SELECT * FROM users");
+					while ($data = mysql_fetch_array($query)) {
+						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+					}	
+				?>
+			</tbody>
+		</table>
+		</div>
+	</section>
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
 

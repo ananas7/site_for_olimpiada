@@ -18,6 +18,7 @@
     <title>Городская олимпиада по программированию ВГИ</title>
 
     <!-- Templates core CSS -->
+	<link href="stylesheets/bootstrap_2.css" rel="stylesheet"> 
     <link href="stylesheets/application.css" rel="stylesheet"> 
 
     <!-- Favicons -->
@@ -34,9 +35,6 @@
 
     <!-- Modernizr Scripts -->
    <!-- <script src="javascript/vendor/modernizr-2.7.1.min.js"></script> -->
-	<?php
-		include('php/registration.php');
-	?>
   </head>
   <body class="index" id="to-top">
 
@@ -290,26 +288,34 @@
 	
 	<section class="features-section" id="section-4">
 		<h1 align="center">Список участников</h1>
-		<ul>
-		<?php
-			function GetMyConnection() {
-				global $g_link;
-				if( $g_link )
-					return $g_link;
-				$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-				mysql_select_db('olimp', $g_link) or die('Could not select database.');
-				return $g_link;
-			}
-			echo 1;
-			$db=GetMyConnection();
-			$query = mysql_query("SELECT * FROM users");
-			while ($data = mysql_fetch_array($query)) {
-				$a = "<li>". $data['lastname']."&nbsp". $data['firstname']."&nbsp".$data['school']."</li>";
-				echo $a;
-				
-			}	
-		?>
-		</ul>
+		<div class="table-responsive spisok" >
+		<table class="table table-hover" >
+			<thead>
+			  <tr>
+				<th>Фамилия</th>
+				<th>Имя</th>
+				<th>Школа</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<?php
+					function GetMyConnection() {
+						global $g_link;
+						if( $g_link )
+							return $g_link;
+						$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+						mysql_select_db('olimp', $g_link) or die('Could not select database.');
+						return $g_link;
+					}
+					$db=GetMyConnection();
+					$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+					while ($data = mysql_fetch_array($query)) {
+						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+					}	
+				?>
+			</tbody>
+		</table>
+		</div>
 	</section>
 	
     <!-- Footer -->

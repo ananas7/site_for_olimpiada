@@ -46,7 +46,7 @@ if (!empty($myrow['id'])) {
 $result2 = mysql_query ("INSERT INTO users (lastname,firstname,school,class,email) VALUES('".mysql_real_escape_string($lastname)."','".mysql_real_escape_string($firstname)."','".mysql_real_escape_string($school)."','".mysql_real_escape_string($class)."','".mysql_real_escape_string($email)."')");
 // Проверяем, есть ли ошибки
 if ($result2=='TRUE') {
-	header ('Location: ../index2.html');
+	header ('Location: ../ok.php');
     exit();
 }else {
 	echo "Ошибка! Вы не зарегистрированы.";
