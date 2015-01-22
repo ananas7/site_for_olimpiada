@@ -240,50 +240,54 @@
 
             <div class="col-md-12">
 
-              <h4 class="text-center">Присоединиться</h4>
+				<h4 class="text-center">Присоединиться</h4>
 
-              <form class="sign-in-up-form"  method="post" action="php\save_user.php" role="form">
-                
-                <!-- Input 0 -->
-                <div class="form-group">
-                  <input class="form-control" name="LastName" type="text" placeholder="Фамилия">
-                </div>
-				<div class="form-group">
-                  <input class="form-control" name="FirstName" type="text" placeholder="Имя">
-                </div><!-- /.form-group -->
-
-				 <!-- Input 1 -->
-                <div class="form-group">
-                  <input class="form-control" name="School" type="text" placeholder="Школа">
-                </div> <!-- /.form-group -->
+				<form class="sign-in-up-form"  method="post" action="php\save_user.php" role="form">
 				
-                <!-- Input 2 -->
-                <div class="form-group">
-                  <input class="form-control" name="Class" type="text" placeholder="Класс">
-                </div> <!-- /.form-group -->
+					<!-- Input 0 -->
+					<div class="form-group">
+						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="LastName" type="text" placeholder="Фамилия (Иванов)" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="FirstName" type="text" placeholder="Имя (Игорь)" required>
+					</div><!-- /.form-group -->
 
-                <!-- Input 3 -->
-                <div class="form-group">
-                  <input class="form-control" name="Email" type="email" placeholder="Email">
-                </div> <!-- /.form-group -->
+					<!-- Input 1 -->
+					<div class="form-group">
+						<input class="form-control" pattern="^[1-9][0-9]{1,2}$" name="School" type="text" placeholder="Школа (24)" required>
+					</div> <!-- /.form-group -->
 
-                <div class="validator">
-                  <input class="validator" type="text" name="validator" value="">
-                </div> 
+					<!-- Input 2 -->
+					<div class="form-group">
+						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс (11а)" required>
+					</div> <!-- /.form-group -->
+
+					<!-- Input 3 -->
+					<div class="form-group">
+						<input class="form-control"  pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" name="Email" type="text" placeholder="Email (igor@example.com)" required>
+					</div> <!-- /.form-group -->
+
+					<div class="validator">
+						<input class="validator" type="text" name="validator" value="">
+					</div> 
+
+					<!-- Button -->
+					<button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
+
+				</form> <!-- /.sign-in-up-form -->
 				
-                <!-- Button -->
-                <button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
-
-              </form> <!-- /.sign-in-up-form -->
-              
             </div> <!-- /.col-md-12 -->
-
-          </div> <!-- /.row -->
+			
+		  </div> <!-- /.row -->
           
         </section> <!-- /.sign-in-up-content -->
         
-      </div> <!-- /.container -->
-
+	</div> <!-- /.container -->
+		
+	<div  class="col-md-12" id="back_call">
+		<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
+	</div>
+			
     </section> <!-- /.sign-in-up-section -->
 	
 	<section class="features-section" id="section-4">
@@ -321,47 +325,47 @@
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
 
-      <div class="container">
+    <div class="container">
 
         <div class="row">
 
-          <div class="col-md-4 col-footer">
+        <div class="col-md-4 col-footer">
             
             <!-- Footer 1 -->
             <section>
               <p>Сделано НЕ в Китае.</p>
             </section>
 
-          </div> <!-- /.col-md-4 -->
+        </div> <!-- /.col-md-4 -->
 
-          <div class="col-md-4 col-footer col-padding">
+        <div class="col-md-4 col-footer col-padding">
             
             <!-- Footer 1 -->
             <section class="text-center">
-              <p>Мы в контакте.</p>
+              <p>Мы Вконтакте.</p>
             </section>
 
             <!-- Social media links -->
             <ul class="social-media-links">
 			
-              <li><a class="fa fa-vk fb" href="https://vk.com/matfak_vgi"></a></li>
-              
+              <li><a class="fa fa-vk fb" href=""></a></li>
+			  
             </ul> <!-- /.social-media-links -->
 
-          </div> <!-- /.col-md-4 -->
+        </div> <!-- /.col-md-4 -->
 
-          <div class="col-md-4 col-footer">
-            
-            <!-- Footer 1 -->
-            <section>
-              <p><strong>Создано при поддержки</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-            </section>
+		<div class="col-md-4 col-footer">
+			
+			<!-- Footer 1 -->
+			<section>
+			  <p><strong>Создано при поддержки</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
+			</section>
+			 
+		</div> <!-- /.col-md-4 -->
+		  
+		</div> <!-- /.row -->
 
-          </div> <!-- /.col-md-4 -->
-          
-        </div> <!-- /.row -->
-
-      </div> <!-- /.container -->
+	</div> <!-- /.container -->
 
     </footer> <!-- /.footer-section -->
 
@@ -376,5 +380,5 @@
 		<script>
 			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		</script>
-  </body>
+	</body>
 </html>

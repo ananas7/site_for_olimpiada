@@ -79,7 +79,7 @@
 						return $g_link;
 					}
 					$db=GetMyConnection();
-					$query = mysql_query("SELECT * FROM users");
+					$query = mysql_query("SELECT * FROM users WHERE modered = 1");
 					while ($data = mysql_fetch_array($query)) {
 						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
 					}	

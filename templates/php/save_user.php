@@ -29,10 +29,10 @@ if (isset($_POST['Email'])) {
 }
 
 if(filter_var($email, FILTER_VALIDATE_IP)){
-	exit ("Неверно введен e-mail!"."#".$email."#");
+	exit ("Incorrect e-mail!");
 }
 if (empty($lastname) or empty($firstname) or empty($school) or empty($class) or empty($email)) {
-	exit ("Вы ввели не всю информацию, пожалуйста заполните все поля!");
+	exit ("You shell not path!");
 }
 
 include ("bd.php");
@@ -40,7 +40,7 @@ $db=GetMyConnection();
 $result = mysql_query("SELECT id FROM users WHERE email='".mysql_real_escape_string($email)."'",$db);
 $myrow = mysql_fetch_array($result);
 if (!empty($myrow['id'])) {
-	exit ("Извините, на данный email уже зарегистрирован пользователь.");
+	exit ("You email alredy exciest");
 }
 // если такого нет, то сохраняем данные
 $result2 = mysql_query ("INSERT INTO users (lastname,firstname,school,class,email) VALUES('".mysql_real_escape_string($lastname)."','".mysql_real_escape_string($firstname)."','".mysql_real_escape_string($school)."','".mysql_real_escape_string($class)."','".mysql_real_escape_string($email)."')");
@@ -49,6 +49,6 @@ if ($result2=='TRUE') {
 	header ('Location: ../ok.php');
     exit();
 }else {
-	echo "Ошибка! Вы не зарегистрированы.";
+	echo "Warning blin!";
 }
 ?>
