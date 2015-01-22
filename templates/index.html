@@ -110,8 +110,9 @@
     <!-- Features -->
     <section class="features-section" id="section-2">
 
-      
+			
 			<div class="container">
+			<h1> image Gallery(){ </h1>
 			<div id="hujallery">
 			
 			<div id="grid-gallery" class="grid-gallery">
@@ -494,16 +495,7 @@
 				</section><!-- // slideshow -->
 			</div><!-- // grid-gallery -->
 			</div>
-		
-			<div class="row">
-				<h1> image Gallery(){ </h1>
-				
-
-				
 				<h1> } </h1>
-			</div>
-          
-         
 		 </div> <!-- /.container -->
 
     </section> <!-- /.features-section -->
@@ -525,7 +517,7 @@
 
               <h4 class="text-center">Присоединиться</h4>
 
-              <form class="sign-in-up-form" action="php\registration.php" role="form">
+              <form class="sign-in-up-form"  method="post" action="php\save_user.php" role="form">
                 
                 <!-- Input 0 -->
                 <div class="form-group">
@@ -542,14 +534,18 @@
 				
                 <!-- Input 2 -->
                 <div class="form-group">
-                  <input class="form-control" name="Class" type="email" placeholder="Класс">
+                  <input class="form-control" name="Class" type="text" placeholder="Класс">
                 </div> <!-- /.form-group -->
 
                 <!-- Input 3 -->
                 <div class="form-group">
-                  <input class="form-control" name="Email" type="password" placeholder="Email">
+                  <input class="form-control" name="Email" type="email" placeholder="Email">
                 </div> <!-- /.form-group -->
 
+                <div class="validator">
+                  <input class="validator" type="text" name="validator" value="">
+                </div> 
+				
                 <!-- Button -->
                 <button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
 
@@ -560,23 +556,6 @@
           </div> <!-- /.row -->
           
         </section> <!-- /.sign-in-up-content -->
-
-
-
-
-        <div class="row">
-
-          <div class="col-md-12">
-
-            <section class="footer-copyright text-center">
-
-              <p>Made with <i class="fa fa-heart"></i></p>
-              
-            </section> <!-- /.footer-section -->
-            
-          </div> <!-- /.col-md-12 -->
-
-        </div> <!-- /.row -->
         
       </div> <!-- /.container -->
 
