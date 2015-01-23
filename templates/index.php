@@ -27,6 +27,8 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+
+		
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,25 +38,24 @@
     <!-- Modernizr Scripts -->
    <!-- <script src="javascript/vendor/modernizr-2.7.1.min.js"></script> -->
   </head>
-  <body class="index" id="to-top">
+  <body class="index" id="to-top" data-spy="scroll" data-target="#myScrollspy">
 
-    <!-- Side nav -->
-    <nav class="side-nav" role="navigation">
+    <!-- Side nav nav-side-nav nav-stacked-->
+    <div class="side-nav" id="">
 
-      <ul class="nav-side-nav">
-		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Наверх" data-placement="left"></a></li>
-        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Информация" data-placement="left"></a></li>
-        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галлерея" data-placement="left"></a></li>
-        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"></a></li>
-        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"></a></li>
-		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"></a></li>
+      <ul class="nav nav-tabs nav-stacked" role="tablist">
+		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Начало" data-placement="left"><image src="images/favicon/home.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Информация" data-placement="left"><image src="images/favicon/book.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галлерея" data-placement="left"><image src="images/favicon/image.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"><image src="images/favicon/list-view.png"/></a></li>
+		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"><image src="images/favicon/location.png"/></a></li>
       </ul>
-      
-    </nav> <!-- /.side-nav -->
+    </div> <!-- /.side-nav -->
 
 
 
-
+     
     <!-- Jumbotron -->
     <header class="jumbotron" role="banner">
 
@@ -121,7 +122,6 @@
 
     <!-- Features -->
     <section class="features-section" id="section-2">
-
 			
 			<div class="container">
 			<h1> image Gallery() { </h1>
@@ -226,19 +226,17 @@
 
 	
     <!-- Sign In/Sign Up section -->
-    <section class="sign-in-up-section" id="section-3">
+    <section id="section-3">
 
-      <div class="container">
-
+		<div class="container">
 
         <section class="sign-in-up-content">
 
           <div class="row">
 
             <div class="col-md-12">
-
 				<h4 class="text-center">Присоединиться</h4>
-
+				
 				<form class="sign-in-up-form"  method="post" action="php\save_user.php" role="form">
 				
 					<!-- Input 0 -->
@@ -279,7 +277,7 @@
           
         </section> <!-- /.sign-in-up-content -->
         
-	</div> <!-- /.container -->
+		</div> <!-- /.container -->
 			
     </section> <!-- /.sign-in-up-section -->
 	
@@ -315,7 +313,7 @@
 		</div>
 	</section>
 	
-	<section id="section-5">
+	<section class = "map" id="section-5" >
 		<div class="container">
 			<div class="row">
 				<br>
@@ -381,5 +379,6 @@
 		<script>
 			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		</script>
+	
 	</body>
 </html>
