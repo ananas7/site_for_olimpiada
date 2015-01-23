@@ -23,7 +23,7 @@
 
     <!-- Favicons -->
   
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
@@ -88,52 +88,8 @@
 		</table>
 		</div>
 	</section>
-    <!-- Footer -->
-    <footer class="footer-section" role="contentinfo">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 col-footer">
-            
-            <!-- Footer 1 -->
-            <section>
-              <p>Сделано НЕ в Китае.</p>
-            </section>
-
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4 col-footer col-padding">
-            
-            <!-- Footer 1 -->
-            <section class="text-center">
-              <p>Мы в контакте.</p>
-            </section>
-
-            <!-- Social media links -->
-            <ul class="social-media-links">
-			
-              <li><a class="fa fa-vk fb" href="https://vk.com/matfak_vgi"></a></li>
-              
-            </ul> <!-- /.social-media-links -->
-
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4 col-footer">
-            
-            <!-- Footer 1 -->
-            <section>
-              <p><strong>Создано при поддержки</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-            </section>
-
-          </div> <!-- /.col-md-4 -->
-          
-        </div> <!-- /.row -->
-
-      </div> <!-- /.container -->
-
-    </footer> <!-- /.footer-section -->
+    
+	
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>

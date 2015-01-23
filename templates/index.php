@@ -23,7 +23,7 @@
 
     <!-- Favicons -->
   
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
@@ -86,8 +86,16 @@
 
 			<h1 align="left"> 
 			string Info() {
-			</h1>
-			<p>&nbsp; &nbsp; &nbsp; &nbsp;Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института. </p> 
+			</h1>&nbsp; &nbsp; &nbsp; &nbsp;<br>
+			<p> 
+				&nbsp; &nbsp; &nbsp; &nbsp;<strong>Небольшое отступление:</strong><br>
+				&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;31 января 2015 года состоится городская предметная олимпиада называетя "Информационные технологии",<br>
+				&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;место провидения Волжский Гуманитарный Институт.<br>
+				&nbsp; &nbsp; &nbsp; &nbsp;<strong>Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института:</strong><br>
+				&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;21 февраля 2015 года состоится городская предметная олимпиада с говорящим названием "Программирование". <br>
+				&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Приглашаются учащиеся 8-11 классов, окончательная регистрация участников будет проходить в Волжском<br>
+				&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Гуманитарном Институте с 09:00 до 10:00. Ждем всех желающих!
+			</p> 
 			<h1>
 			}
 			</h1>
@@ -117,98 +125,80 @@
 					<ul class="grid">
 						<li class="grid-sizer"></li><!-- for Masonry column width -->
 						<li>
-							<figure>
-								<img src="img/thumb/1.png" alt="img01"/>
-								<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/1.jpg" alt="img01"/></figure>
 						</li>
 						<li>
-							<figure>
-								<img src="img/thumb/2.png" alt="img02"/>
-								<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/2.jpg" alt="img02"/></figure>
 						</li>
 						<li>
-							<figure>
-								<img src="img/thumb/3.png" alt="img03"/>
-								<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/3.jpg" alt="img03"/></figure>
 						</li>
 						<li>
-							<figure>
-								<img src="img/thumb/4.png" alt="img04"/>
-								<figcaption><h3>Chillwave nihil occupy</h3><p>In post-ironic gluten-free deserunt, PBR&amp;B non pork belly cupidatat polaroid. </p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/4.jpg" alt="img04"/></figure>
 						</li>
 						<li>
-							<figure>
-								<img src="img/thumb/5.png" alt="img05"/>
-								<figcaption><h3>Kale chips lomo biodiesel</h3><p>Pariatur food truck street art consequat sustainable, et kogi beard qui paleo. </p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/5.jpg" alt="img05"/></figure>
 						</li>
 						<li>
-							<figure>
-								<img src="img/thumb/6.png" alt="img06"/>
-								<figcaption><h3>Exercitation occaecat</h3><p>Street chillwave hoodie ea gentrify.</p></figcaption>
-							</figure>
+							<figure><img src="img/thumb/6.jpg" alt="img06"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/7.jpg" alt="img07"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/8.jpg" alt="img08"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/9.jpg" alt="img09"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/10.jpg" alt="img10"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/11.jpg" alt="img11"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/thumb/12.jpg" alt="img12"/></figure>
 						</li>
 					</ul>
 				</section><!-- // grid-wrap -->
 				<section class="slideshow">
 					<ul>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Letterpress asymmetrical</h3>
-									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
-								</figcaption>
-								<img src="img/large/1.png" alt="img01"/>
-							</figure>
+							<figure><img src="img/large/1.jpg" alt="img01"/></figure>
 						</li>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Vice velit chia</h3>
-									<p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
-								</figcaption>
-								<img src="img/large/2.png" alt="img02"/>
-							</figure>
+							<figure><img src="img/large/2.jpg" alt="img02"/></figure>
 						</li>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Brunch semiotics</h3>
-									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
-								</figcaption>
-								<img src="img/large/3.png" alt="img03"/>
-							</figure>
+							<figure><img src="img/large/3.jpg" alt="img03"/></figure>
 						</li>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Chillwave nihil occupy</h3>
-									<p>Vice cliche locavore mumblecore vegan wayfarers asymmetrical letterpress hoodie mustache. Shabby chic lomo polaroid, scenester 8-bit Portland Pitchfork VHS tote bag.</p>
-								</figcaption>
-								<img src="img/large/4.png" alt="img04"/>
-							</figure>
+							<figure><img src="img/large/4.jpg" alt="img04"/></figure>
 						</li>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Kale chips lomo biodiesel</h3>
-									<p>Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.</p>
-								</figcaption>
-								<img src="img/large/5.png" alt="img05"/>
-							</figure>
+							<figure><img src="img/large/5.jpg" alt="img05"/></figure>
 						</li>
 						<li>
-							<figure>
-								<figcaption>
-									<h3>Exercitation occaecat</h3>
-									<p>Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.</p>
-								</figcaption>
-								<img src="img/large/6.png" alt="img06"/>
-							</figure>
+							<figure><img src="img/large/6.jpg" alt="img06"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/7.jpg" alt="img07"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/8.jpg" alt="img08"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/9.jpg" alt="img09"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/10.jpg" alt="img10"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/11.jpg" alt="img11"/></figure>
+						</li>
+						<li>
+							<figure><img src="img/large/12.jpg" alt="img12"/></figure>
 						</li>
 					</ul>
 					<nav>
@@ -283,10 +273,6 @@
         </section> <!-- /.sign-in-up-content -->
         
 	</div> <!-- /.container -->
-		
-	<div  class="col-md-12" id="back_call">
-		<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
-	</div>
 			
     </section> <!-- /.sign-in-up-section -->
 	
@@ -329,16 +315,16 @@
 
         <div class="row">
 
-        <div class="col-md-4 col-footer">
+        <div class="col-md-3">
             
             <!-- Footer 1 -->
             <section>
-              <p>Сделано НЕ в Китае.</p>
+              <p align="center">Сделано НЕ в Китае.</p>
             </section>
 
         </div> <!-- /.col-md-4 -->
 
-        <div class="col-md-4 col-footer col-padding">
+        <div class="col-md-3">
             
             <!-- Footer 1 -->
             <section class="text-center">
@@ -354,14 +340,16 @@
 
         </div> <!-- /.col-md-4 -->
 
-		<div class="col-md-4 col-footer">
-			
+		<div class="col-md-3">
+	
 			<!-- Footer 1 -->
-			<section>
-			  <p><strong>Создано при поддержки</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-			</section>
+			  <p><strong>Создано при поддержке</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
 			 
 		</div> <!-- /.col-md-4 -->
+		
+		<div  class="col-md-3">
+			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
+		</div>
 		  
 		</div> <!-- /.row -->
 
