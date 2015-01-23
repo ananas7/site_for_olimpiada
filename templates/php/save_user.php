@@ -40,7 +40,8 @@ $db=GetMyConnection();
 $result = mysql_query("SELECT id FROM users WHERE email='".mysql_real_escape_string($email)."'",$db);
 $myrow = mysql_fetch_array($result);
 if (!empty($myrow['id'])) {
-	exit ("You email alredy exciest");
+	header ('Location: ../not_ok.php');
+    exit();
 }
 // если такого нет, то сохраняем данные
 $result2 = mysql_query ("INSERT INTO users (lastname,firstname,school,class,email) VALUES('".mysql_real_escape_string($lastname)."','".mysql_real_escape_string($firstname)."','".mysql_real_escape_string($school)."','".mysql_real_escape_string($class)."','".mysql_real_escape_string($email)."')");

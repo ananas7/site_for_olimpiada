@@ -45,50 +45,16 @@
 		<div class="row magic"></div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1>Поздравляем, вы успешно зарегестрированы! Ждем вас на олимпиаде!<h1></div>
+				<div><h1>Ой, такой email уже занят, возможно вы уже зарегистрированы.<h1></div>
 			</div><!-- row -->   
 			<div class="row">
-				<a class="btn btn-danger" href="/">Еще регистрируемся?)</a> 
+				<a class="btn btn-danger" href="/">Попробовать еще раз</a> 
 			</div> <!-- row -->
 		</div>
 		<div class="row magic"></div>
       </div> <!-- /.container -->
 
     </header> <!-- /.jumbotron -->
-
-	
-	  <section class="features-section" id="section-4">
-		<h1 align="center">Список участников</h1>
-		<div class="table-responsive spisok" >
-		<table class="table table-hover" >
-			<thead>
-			  <tr>
-				<th>Фамилия</th>
-				<th>Имя</th>
-				<th>Класс</th>
-			  </tr>
-			</thead>
-			<tbody>
-				<?php
-					function GetMyConnection() {
-						global $g_link;
-						if( $g_link )
-							return $g_link;
-						$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-						mysql_select_db('olimp', $g_link) or die('Could not select database.');
-						return $g_link;
-					}
-					$db=GetMyConnection();
-					$query = mysql_query("SELECT * FROM users WHERE modered = 1");
-					while ($data = mysql_fetch_array($query)) {
-						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-					}	
-				?>
-			</tbody>
-		</table>
-		</div>
-		<p align="center">Вы будите добавлены в таблицу после модерации.</p>
-	</section>
     
 	 <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
