@@ -47,7 +47,7 @@
         <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галлерея" data-placement="left"></a></li>
         <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"></a></li>
         <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"></a></li>
-      
+		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"></a></li>
       </ul>
       
     </nav> <!-- /.side-nav -->
@@ -59,7 +59,9 @@
     <header class="jumbotron" role="banner">
 
       <div class="container">
-		<div class="row magic"></div>
+		<div class="row magic">
+			<image src="images/olimpiada.png" />
+		</div>
 		<div class="row magic">
 			<div class="row">			
 				<div><h1> Олимпиада по программированию Волжского Гуманитарного института </h1></div>
@@ -88,26 +90,30 @@
 			string Info() {
 			</h1>
 			<p> 
-				<div class="col-md-4"><strong>Небольшое отступление:</strong></div>
-				<div class="col-md-3">31 января 2015 года состоится городская предметная олимпиада под названием "Информационные технологии",</div>
-				<div class="col-md-3">место проведения Волжский Гуманитарный Институт.</div>
-				<div class="col-md-4"><strong>Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института:</strong></div>
-				<div class="col-md-3">21 февраля 2015 года состоится городская предметная олимпиада с говорящим названием "Программирование". </div>
-				<div class="col-md-3">Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить</div>
-				<div class="col-md-3">в Волжском Гуманитарном Институте с 09:00 до 10:00. Ждем всех желающих!</div>
-				<div class="col-md-3">Призы для победителей и участников!</div>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3"><strong>Небольшое отступление:</strong></div>
+					<div class="col-md-8">31 января 2015 года состоится городская предметная олимпиада под названием "Информационные технологии", место проведения Волжский Гуманитарный Институт.</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3"><strong>Об олимпиаде:</strong></div>
+					<div class="col-md-8">Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института состоится 21 февраля 2015 года. Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить <a href="#section-5">в&nbsp;главном&nbsp;корпусе&nbsp;ВГИ</a> с 09:00 до 10:00. Ждем всех желающих! Призы для победителей и участников!</div>
+				</div>
 			</p> 
 			<h1>
 			}
-			</h1>
-          
-
-        
+			</h1>        
           
         </div> <!-- /.row -->
         
-      </div> <!-- /.container -->
-      
+	</div> <!-- /.container -->
+    
+	<div class="modal fade" id="Map_VGI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" width="800" height="600">
+		
+	</div>
+	
     </section> <!-- /.services-section -->
 
 
@@ -309,6 +315,19 @@
 		</div>
 	</section>
 	
+	<section id="section-5">
+		<div class="container">
+			<div class="row">
+				<br>
+				<a id="firmsonmap_biglink" href="http://maps.2gis.ru/#/?history=project/volgograd/center/44.80015936943,48.754263277867/zoom/17/state/widget/id/4644865396784417/firms/4644865396784417">Перейти к большой карте</a>
+				<script charset="utf-8" type="text/javascript" src="http://firmsonmap.api.2gis.ru/js/DGWidgetLoader.js"></script>
+				<script charset="utf-8" type="text/javascript">new DGWidgetLoader({"borderColor":"#a3a3a3","width":"900","height":"400","wid":"b0de3e33bf2ec3633c99ee5775815b54","pos":{"lon":"44.80015936943","lat":"48.754263277867","zoom":"17"},"opt":{"ref":"hidden","card":["name"],"city":"volgograd"},"org":[{"id":"4644865396784417"}]});</script>
+				<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+			</div>
+		</div>
+	</section>
+	  
+	
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
 
@@ -316,7 +335,7 @@
 
         <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             
             <!-- Footer 1 -->
             <section>
@@ -325,7 +344,7 @@
 
         </div> <!-- /.col-md-4 -->
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             
             <!-- Footer 1 -->
             <section class="text-center">
@@ -341,14 +360,7 @@
 
         </div> <!-- /.col-md-4 -->
 
-		<div class="col-md-3">
-	
-			<!-- Footer 1 -->
-			  <p><strong>Создано при поддержке</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-			 
-		</div> <!-- /.col-md-4 -->
-		
-		<div  class="col-md-3">
+		<div  class="col-md-4">
 			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
 		</div>
 		  
