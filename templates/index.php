@@ -41,15 +41,14 @@
   <body class="index" id="to-top" data-spy="scroll" data-target="#myScrollspy">
 
     <!-- Side nav nav-side-nav nav-stacked-->
-    <div class="side-nav" id="">
-
+    <div class="side-nav" id="myScrollspy">
       <ul class="nav nav-tabs nav-stacked" role="tablist">
-		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Начало" data-placement="left"><image src="images/favicon/home.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Информация" data-placement="left"><image src="images/favicon/book.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галлерея" data-placement="left"><image src="images/favicon/image.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"><image src="images/favicon/list-view.png"/></a></li>
-		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"><image src="images/favicon/location.png"/></a></li>
+		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Начало" data-placement="left"><image src="images/favicon/home1.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Информация" data-placement="left"><image src="images/favicon/book1.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галерея" data-placement="left"><image src="images/favicon/image1.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen1.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"><image src="images/favicon/list-view1.png"/></a></li>
+		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"><image src="images/favicon/location1.png"/></a></li>
       </ul>
     </div> <!-- /.side-nav -->
 
@@ -57,7 +56,7 @@
 
      
     <!-- Jumbotron -->
-    <header class="jumbotron" role="banner">
+    <header class="jumbotron magic100" role="banner">
 
       <div class="container">
 		<div class="row magic">
@@ -65,7 +64,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада по программированию Волжского Гуманитарного института </h1></div>
+				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного института </h1></div>
 			</div><!-- row -->   
 			<div class="row">
 				 <a class="btn btn-danger" href="#section-1">Узнать больше</a>           
@@ -75,13 +74,14 @@
 		<div class="row magic"></div>
       </div> <!-- /.container -->
 
-    </header> <!-- /.jumbotron -->
+    </header>
+	<!-- /.jumbotron -->
 
 
 
 
     <!-- Services -->
-    <section class="services-section" id="section-1">
+    <section class="services-section magic100" id="section-1">
 
       <div class="container">
 
@@ -90,6 +90,7 @@
 			<h1 align="left"> 
 			string Info() {
 			</h1>
+			<br>
 			<p> 
 				<div class="row">
 					<div class="col-md-1"></div>
@@ -111,17 +112,14 @@
         
 	</div> <!-- /.container -->
     
-	<div class="modal fade" id="Map_VGI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" width="800" height="600">
-		
-	</div>
 	
-    </section> <!-- /.services-section -->
-
-
+	
+    </section>
+	<!-- /.services-section -->
 
 
     <!-- Features -->
-    <section class="features-section" id="section-2">
+    <section class="features-section magic100" id="section-2">
 			
 			<div class="container">
 			<h1> image Gallery() { </h1>
@@ -220,24 +218,23 @@
 				<h1> } </h1>
 		 </div> <!-- /.container -->
 
-    </section> <!-- /.features-section -->
-
-
+    </section>
+	<!-- /.features-section -->
 
 	
     <!-- Sign In/Sign Up section -->
-    <section id="section-3">
+    <section class="services-section magic100"id="section-3">
 
 		<div class="container">
 
         <section class="sign-in-up-content">
 
           <div class="row">
-
-            <div class="col-md-12">
+			<div class="col-md-4"></div>
+            <div class="col-md-4">
 				<h4 class="text-center">Присоединиться</h4>
 				
-				<form class="sign-in-up-form"  method="post" action="php\save_user.php" role="form">
+				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form">
 				
 					<!-- Input 0 -->
 					<div class="form-group">
@@ -279,12 +276,14 @@
         
 		</div> <!-- /.container -->
 			
-    </section> <!-- /.sign-in-up-section -->
+    </section> 
+	<!-- /.sign-in-up-section -->
 	
-	<section class="features-section" id="section-4">
+	<!-- list -->
+	<section class="features-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
 		<div class="table-responsive spisok" >
-		<table class="table table-hover" >
+		<table class="table table-hover table-stripe" >
 			<thead>
 			  <tr>
 				<th>Фамилия</th>
@@ -292,7 +291,7 @@
 				<th>Школа</th>
 			  </tr>
 			</thead>
-			<tbody>
+			<tbody class="scrol">
 				<?php
 					function GetMyConnection() {
 						global $g_link;
@@ -312,8 +311,11 @@
 		</table>
 		</div>
 	</section>
+	<!-- end list -->
 	
-	<section class = "map" id="section-5" >
+	
+	<!-- Map -->
+	<section class = "services-section map" id="section-5" >
 		<div class="container">
 			<div class="row">
 				<br>
@@ -324,7 +326,7 @@
 			</div>
 		</div>
 	</section>
-	  
+	<!-- end Map -->
 	
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
@@ -333,16 +335,7 @@
 
         <div class="row">
 
-        <div class="col-md-4">
-            
-            <!-- Footer 1 -->
-            <section>
-              <p align="center">Сделано НЕ в Китае.</p>
-            </section>
-
-        </div> <!-- /.col-md-4 -->
-
-        <div class="col-md-4">
+        <div class="col-md-6">
             
             <!-- Footer 1 -->
             <section class="text-center">
@@ -352,13 +345,13 @@
             <!-- Social media links -->
             <ul class="social-media-links">
 			
-              <li><a class="fa fa-vk fb" href=""></a></li>
+              <li><image src="images/vk.png" href="http://vk.com/matfak_vgi"/></li>
 			  
             </ul> <!-- /.social-media-links -->
 
         </div> <!-- /.col-md-4 -->
 
-		<div  class="col-md-4">
+		<div  class="col-md-6">
 			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
 		</div>
 		  
