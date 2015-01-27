@@ -57,19 +57,18 @@
     </header> <!-- /.jumbotron -->
 
 	
-	<!-- list -->
-	<section class="features-section magic100" id="section-4">
+	  <section class="features-section" id="section-4">
 		<h1 align="center">Список участников</h1>
 		<div class="table-responsive spisok" >
-		<table class="table table-hover table-stripe" >
+		<table class="table table-hover" >
 			<thead>
 			  <tr>
 				<th>Фамилия</th>
 				<th>Имя</th>
-				<th>Школа</th>
+				<th>Класс</th>
 			  </tr>
 			</thead>
-			<tbody class="scrol">
+			<tbody>
 				<?php
 					function GetMyConnection() {
 						global $g_link;
@@ -88,8 +87,8 @@
 			</tbody>
 		</table>
 		</div>
+		<p align="center">Вы будите добавлены в таблицу после модерации.</p>
 	</section>
-	<!-- end list -->
     
 	 <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
