@@ -7,6 +7,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 article,
@@ -6790,9 +6791,11 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
  .magic{
     height: 33vh;
  }
+
  .spisok{
 	width: 60vw;
 	margin-left: 20vw;
+	height:100px;
  }
  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: #red;
@@ -6803,4 +6806,6 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 }
 .magic100 {
 	height: 100vh;
+
 }
+
