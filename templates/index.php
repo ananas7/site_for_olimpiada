@@ -349,7 +349,9 @@
         </div> <!-- /.col-md-4 -->
 
 		<div  class="col-md-6">
-			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
+			<p><strong>Обратная связь</strong><br>
+			<a href="ilylomte7@gmail.com">ilylomte7@gmail.com</a><br>
+			<a href="joni852963@gmail.com">joni852963@gmail.com</a></p>
 		</div>
 		  
 		</div> <!-- /.row -->
