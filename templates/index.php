@@ -229,7 +229,7 @@
           <div class="row">
 			<div class="col-md-4"></div>
             <div class="col-md-4">
-				<h4 class="text-center">Присоединиться</h4>
+				<h4 class="text-center"></h4>
 				
 				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form">
 				
@@ -335,10 +335,7 @@
         <div class="col-md-6">
             
             <!-- Footer 1 -->
-            <section class="text-center">
-              <p>Мы Вконтакте.</p>
-            </section>
-
+            
             <!-- Social media links -->
             <ul class="social-media-links">
 			

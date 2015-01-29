@@ -6789,13 +6789,14 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	display: none;
   }
  .magic{
-    height: 33vh;
+    height: 33%;
  }
 
  .spisok{
-	width: 60vw;
-	margin-left: 20vw;
+	width: 60%;
+	margin-left: 20%;
 	height:100px;
+	overflow-y:auto;
  }
  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: #red;
@@ -6804,8 +6805,13 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	margin-left: 80vw;
 	text-align: left;
 }
+.btn{
+	margin-bottom: 5px;
+}
 .magic100 {
-	height: 100vh;
 
+}
+#section-3{
+	height: 800px;
 }
 
