@@ -279,33 +279,36 @@
 	<!-- list -->
 	<section class="features-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
-		<div class="table-responsive spisok" >
-		<table class="table table-hover table-stripe" >
-			<thead>
-			  <tr>
-				<th>Фамилия</th>
-				<th>Имя</th>
-				<th>Школа</th>
-			  </tr>
-			</thead>
-			<tbody class="scrol">
-				<?php
-					function GetMyConnection() {
-						global $g_link;
-						if( $g_link )
-							return $g_link;
-						$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-						mysql_select_db('olimp', $g_link) or die('Could not select database.');
-						return $g_link;
-					}
-					$db=GetMyConnection();
-					$query = mysql_query("SELECT * FROM users WHERE modered = 1");
-					while ($data = mysql_fetch_array($query)) {
-						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-					}	
-				?>
-			</tbody>
-		</table>
+		<div class =" col-md-offset-3 col-md-6">
+			<div class="table-responsive spisok" >
+				<table class="table table-hover table-stripe" >
+					<thead>
+					  <tr>
+						<th>Фамилия</th>
+						<th>Имя</th>
+						<th>Школа</th>
+					  </tr>
+					</thead>
+					<tbody class="scrol">
+						<?php
+							function GetMyConnection() {
+								global $g_link;
+								if( $g_link )
+									return $g_link;
+								$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+								mysql_select_db('olimp', $g_link) or die('Could not select database.');
+								return $g_link;
+							}
+							$db=GetMyConnection();
+							$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+							while ($data = mysql_fetch_array($query)) {
+								echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+							}	
+						?>
+					</tbody>
+				</table>
+			</div>
+			<br><br>			
 		</div>
 	</section>
 	<!-- end list -->
@@ -362,12 +365,12 @@
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/assets/application.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpGridGallery.js"></script>
-		<script>
-			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-		</script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpGridGallery.js"></script>
+	<script>
+		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	</script>
 	
 	</body>
 </html>
