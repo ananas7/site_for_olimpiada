@@ -6811,4 +6811,11 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 #section-3{
 	height: 800px;
 }
+#cent-out{
+	width:50%;
+	float: right;
+}
+#cent-in{
+	margin-left:-250px;	
+}
 

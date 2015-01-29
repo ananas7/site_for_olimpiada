@@ -279,8 +279,9 @@
 	<!-- list -->
 	<section class="features-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
-		<div class =" col-md-offset-3 col-md-6">
-			<div class="table-responsive spisok" >
+		<div id="cent-out">
+		<div id="cent-in">
+			<div class="table-responsive spisok">
 				<table class="table table-hover table-stripe" >
 					<thead>
 					  <tr>
@@ -309,6 +310,7 @@
 				</table>
 			</div>
 			<br><br>			
+		</div>
 		</div>
 	</section>
 	<!-- end list -->
@@ -350,15 +352,16 @@
 
 		<div  class="col-md-6">
 			<p><strong>Обратная связь</strong><br>
-			<a href="ilylomte7@gmail.com">ilylomte7@gmail.com</a><br>
-			<a href="joni852963@gmail.com">joni852963@gmail.com</a></p>
+			<a href="">ilylomte7@gmail.com</a><br>
+			<a href="">joni852963@gmail.com</a></p>
 		</div>
 		  
 		</div> <!-- /.row -->
 
 	</div> <!-- /.container -->
 
-    </footer> <!-- /.footer-section -->
+    </footer>
+	<!-- /.footer-section -->
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>

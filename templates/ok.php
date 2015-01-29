@@ -60,85 +60,74 @@
 	<!-- list -->
 	<section class="features-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
-		<div class="table-responsive spisok" >
-		<table class="table table-hover table-stripe" >
-			<thead>
-			  <tr>
-				<th>Фамилия</th>
-				<th>Имя</th>
-				<th>Школа</th>
-			  </tr>
-			</thead>
-			<tbody class="scrol">
-				<?php
-					function GetMyConnection() {
-						global $g_link;
-						if( $g_link )
-							return $g_link;
-						$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-						mysql_select_db('olimp', $g_link) or die('Could not select database.');
-						return $g_link;
-					}
-					$db=GetMyConnection();
-					$query = mysql_query("SELECT * FROM users WHERE modered = 1");
-					while ($data = mysql_fetch_array($query)) {
-						echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-					}	
-				?>
-			</tbody>
-		</table>
+		<div id="cent-out">
+		<div id="cent-in">
+			<div class="table-responsive spisok">
+				<table class="table table-hover table-stripe" >
+					<thead>
+					  <tr>
+						<th>Фамилия</th>
+						<th>Имя</th>
+						<th>Школа</th>
+					  </tr>
+					</thead>
+					<tbody class="scrol">
+						<?php
+							function GetMyConnection() {
+								global $g_link;
+								if( $g_link )
+									return $g_link;
+								$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+								mysql_select_db('olimp', $g_link) or die('Could not select database.');
+								return $g_link;
+							}
+							$db=GetMyConnection();
+							$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+							while ($data = mysql_fetch_array($query)) {
+								echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+							}	
+						?>
+					</tbody>
+				</table>
+			</div>
+			<br><br>			
+		</div>
 		</div>
 	</section>
 	<!-- end list -->
     
-	 <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
 
     <div class="container">
 
         <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-6">
             
             <!-- Footer 1 -->
-            <section>
-              <p align="center">Сделано НЕ в Китае.</p>
-            </section>
-
-        </div> <!-- /.col-md-4 -->
-
-        <div class="col-md-3">
             
-            <!-- Footer 1 -->
-            <section class="text-center">
-              <p>Мы Вконтакте.</p>
-            </section>
-
             <!-- Social media links -->
             <ul class="social-media-links">
 			
-              <li><a class="fa fa-vk fb" href=""></a></li>
+              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
 			  
             </ul> <!-- /.social-media-links -->
 
         </div> <!-- /.col-md-4 -->
 
-		<div class="col-md-3">
-	
-			<!-- Footer 1 -->
-			  <p><strong>Создано при поддержке</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-			 
-		</div> <!-- /.col-md-4 -->
-		
-		<div  class="col-md-3">
-			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
+		<div  class="col-md-6">
+			<p><strong>Обратная связь</strong><br>
+			<a href="">ilylomte7@gmail.com</a><br>
+			<a href="">joni852963@gmail.com</a></p>
 		</div>
 		  
 		</div> <!-- /.row -->
 
 	</div> <!-- /.container -->
 
-    </footer> <!-- /.footer-section -->
+    </footer>
+	<!-- /.footer-section -->
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>

@@ -56,54 +56,38 @@
 
     </header> <!-- /.jumbotron -->
     
-	 <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
 
     <div class="container">
 
         <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-6">
             
             <!-- Footer 1 -->
-            <section>
-              <p align="center">Сделано НЕ в Китае.</p>
-            </section>
-
-        </div> <!-- /.col-md-4 -->
-
-        <div class="col-md-3">
             
-            <!-- Footer 1 -->
-            <section class="text-center">
-              <p>Мы Вконтакте.</p>
-            </section>
-
             <!-- Social media links -->
             <ul class="social-media-links">
 			
-              <li><a class="fa fa-vk fb" href=""></a></li>
+              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
 			  
             </ul> <!-- /.social-media-links -->
 
         </div> <!-- /.col-md-4 -->
 
-		<div class="col-md-3">
-	
-			<!-- Footer 1 -->
-			  <p><strong>Создано при поддержке</strong> <br>Студентов сия альма-матер, <br>И просто хороших людей)</p>
-			 
-		</div> <!-- /.col-md-4 -->
-		
-		<div  class="col-md-3">
-			<p><strong>Обратная свзяь</strong><br>ilylomte7@gmail.com<br> joni852963@gmail.com</p>
+		<div  class="col-md-6">
+			<p><strong>Обратная связь</strong><br>
+			<a href="">ilylomte7@gmail.com</a><br>
+			<a href="">joni852963@gmail.com</a></p>
 		</div>
 		  
 		</div> <!-- /.row -->
 
 	</div> <!-- /.container -->
 
-    </footer> <!-- /.footer-section -->
+    </footer>
+	<!-- /.footer-section -->
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
