@@ -63,7 +63,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного института </h1></div>
+				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
 			</div><!-- row -->   
 			<div class="row">
 				 <a class="btn btn-danger" href="#section-1">Узнать больше</a>           
@@ -89,12 +89,6 @@
 			</h1>
 			<br>
 			<p> 
-				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-3"><strong>Небольшое отступление:</strong></div>
-					<div class="col-md-8">31 января 2015 года состоится городская предметная олимпиада под названием "Информационные технологии", место проведения Волжский Гуманитарный Институт.</div>
-				</div>
-				<br>
 				<div class="row">
 					<div class="col-md-1"></div>
 					<div class="col-md-3"><strong>Об олимпиаде:</strong></div>
