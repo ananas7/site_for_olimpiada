@@ -6818,4 +6818,6 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 #cent-in{
 	margin-left:-250px;	
 }
-
+#section-4{
+	overflow: auto;
+}
