@@ -45,7 +45,7 @@
 		<div class="row magic"></div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1>Ой, такой email уже занят, возможно вы уже зарегистрированы.<h1></div>
+				<div><h1>Такой email уже занят, возможно вы уже зарегистрированы.<h1></div>
 			</div><!-- row -->   
 			<div class="row">
 				<a class="btn btn-danger" href="/">Попробовать еще раз</a> 

@@ -45,10 +45,10 @@
 		<div class="row magic"></div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1>Поздравляем, вы успешно зарегестрированы! Ждем вас на олимпиаде!<h1></div>
+				<div><h1>Поздравляем, вы успешно зарегестрированы. Ждем вас на олимпиаде!<h1></div>
 			</div><!-- row -->   
 			<div class="row">
-				<a class="btn btn-danger" href="/">Еще регистрируемся?)</a> 
+				<a class="btn btn-danger" href="/">Вернуться на главную</a> 
 			</div> <!-- row -->
 		</div>
 		<div class="row magic"></div>
@@ -58,40 +58,40 @@
 
 	
 	<!-- list -->
-	<section class="features-section magic100" id="section-4">
-		<h1 align="center">Список участников</h1>
+	<section class="services-section magic100" id="section-4">		
 		<div id="cent-out">
-		<div id="cent-in">
-			<div class="table-responsive spisok">
-				<table class="table table-hover table-stripe" >
-					<thead>
-					  <tr>
-						<th>Фамилия</th>
-						<th>Имя</th>
-						<th>Школа</th>
-					  </tr>
-					</thead>
-					<tbody class="scrol">
-						<?php
-							function GetMyConnection() {
-								global $g_link;
-								if( $g_link )
+			<div id="cent-in">
+				<h1>Список участников</h1>
+				<div class="table-responsive spisok">
+					<table class="table table-hover table-stripe" >
+						<thead>
+						  <tr>
+							<th>Фамилия</th>
+							<th>Имя</th>
+							<th>Школа</th>
+						  </tr>
+						</thead>
+						<tbody class="scrol">
+							<?php
+								function GetMyConnection() {
+									global $g_link;
+									if( $g_link )
+										return $g_link;
+									$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+									mysql_select_db('olimp', $g_link) or die('Could not select database.');
 									return $g_link;
-								$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-								mysql_select_db('olimp', $g_link) or die('Could not select database.');
-								return $g_link;
-							}
-							$db=GetMyConnection();
-							$query = mysql_query("SELECT * FROM users WHERE modered = 1");
-							while ($data = mysql_fetch_array($query)) {
-								echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-							}	
-						?>
-					</tbody>
-				</table>
+								}
+								$db=GetMyConnection();
+								$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+								while ($data = mysql_fetch_array($query)) {
+									echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+								}	
+							?>
+						</tbody>
+					</table>	
+				</div>
+				<br><br>	
 			</div>
-			<br><br>			
-		</div>
 		</div>
 	</section>
 	<!-- end list -->

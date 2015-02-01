@@ -97,7 +97,7 @@
 
 					<!-- Input 1 -->
 					<div class="form-group">
-						<input class="form-control" pattern="^[1-9][0-9]{1,2}$" name="School" type="text" placeholder="Школа (24)" required>
+						<input class="form-control" name="School" type="text" placeholder="Школа (24)" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 2 -->
