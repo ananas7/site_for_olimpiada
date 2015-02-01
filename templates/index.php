@@ -128,9 +128,8 @@
     <section class="features-section magic100" id="section-2">
 			
 			<div class="container">
-			<h1> image Gallery() { </h1>
+			<h1> image[] Gallery() { </h1>
 			<div id="hujallery">
-			
 			<div id="grid-gallery" class="grid-gallery scroll">
 				<section class="grid-wrap">
 					<ul class="grid">
