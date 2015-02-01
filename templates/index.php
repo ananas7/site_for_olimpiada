@@ -44,13 +44,13 @@
     <div class="side-nav" id="myScrollspy">
       <ul class="nav nav-tabs nav-stacked" role="tablist">
 		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Начало" data-placement="left"><image src="images/favicon/home1.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Информация" data-placement="left"><image src="images/favicon/book1.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галерея" data-placement="left"><image src="images/favicon/image1.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen1.png"/></a></li>
+         <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen1.png"/></a></li>
+        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галерея" data-placement="left"><image src="images/favicon/image1.png"/></a></li>       
         <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"><image src="images/favicon/list-view1.png"/></a></li>
 		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"><image src="images/favicon/location1.png"/></a></li>
       </ul>
-    </div> <!-- /.side-nav -->
+    </div>
+	<!-- /.side-nav -->
 
 
 
@@ -63,7 +63,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
+				<div><h1> Олимпиада "программированию"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
 			</div><!-- row -->   
 			<div class="row">
 				 <a class="btn btn-danger" href="#section-1">Узнать больше</a>           
@@ -74,38 +74,56 @@
     </header>
 	<!-- /.jumbotron -->
 
-
-
-
     <!-- Services -->
     <section class="services-section magic100" id="section-1">
-
-      <div class="container">
-
-        <div align ="left" class="row">
-
-			<h1 align="left"> 
-			string Info() {
-			</h1>
-			<br>
-			<p> 
-				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-3"><strong>Об олимпиаде:</strong></div>
-					<div class="col-md-8">Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института состоится 21 февраля 2015 года. Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить <a href="#section-5">в&nbsp;главном&nbsp;корпусе&nbsp;ВГИ</a> с 09:00 до 10:00. Ждем всех желающих! Призы для победителей и участников!</div>
+		<div class="container">
+			<div class="col-md-5">
+				<h1 align = "left">string Info() {</h1>
+				<div class="col-md-1"></div>
+				<div class="col-md-11">
+					<p align = "left">Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института состоится 21 февраля 2015 года. Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить <a href="#section-5">в&nbsp;главном&nbsp;корпусе&nbsp;ВГИ</a> с 09:00 до 10:00. Ждем всех желающих! Призы для победителей и участников!</p>
 				</div>
-			</p> 
-			<h1>
-			}
-			</h1>        
-          
-        </div> <!-- /.row -->
-        
-	</div> <!-- /.container -->
-    
-	
-	
-    </section>
+				<h1 align = "left">}</h1>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-5">
+				<h4 class="text-center"></h4>					
+				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form">
+				
+					<!-- Input 0 -->
+					<div class="form-group">
+						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="LastName" type="text" placeholder="Фамилия (Иванов)" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="FirstName" type="text" placeholder="Имя (Игорь)" required>
+					</div><!-- /.form-group -->
+
+					<!-- Input 1 -->
+					<div class="form-group">
+						<input class="form-control" pattern="^[1-9][0-9]{1,2}$" name="School" type="text" placeholder="Школа (24)" required>
+					</div> <!-- /.form-group -->
+
+					<!-- Input 2 -->
+					<div class="form-group">
+						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс (11а)" required>
+					</div> <!-- /.form-group -->
+
+					<!-- Input 3 -->
+					<div class="form-group">
+						<input class="form-control"  pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" name="Email" type="text" placeholder="Email (igor@example.com)" required>
+					</div> <!-- /.form-group -->
+
+					<div class="validator">
+						<input class="validator" type="text" name="validator" value="">
+					</div> 
+
+					<!-- Button -->
+					<button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
+
+				</form> <!-- /.sign-in-up-form -->
+			</div>
+		</div> <!-- /.container -->
+	</section>
 	<!-- /.services-section -->
 
 
@@ -211,67 +229,9 @@
 
     </section>
 	<!-- /.features-section -->
-
-	
-    <!-- Sign In/Sign Up section -->
-    <section class="services-section magic100"id="section-3">
-
-		<div class="container">
-
-        <section class="sign-in-up-content">
-
-          <div class="row">
-			<div class="col-md-4"></div>
-            <div class="col-md-4">
-				<h4 class="text-center"></h4>
-				
-				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form">
-				
-					<!-- Input 0 -->
-					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="LastName" type="text" placeholder="Фамилия (Иванов)" required>
-					</div>
-					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="FirstName" type="text" placeholder="Имя (Игорь)" required>
-					</div><!-- /.form-group -->
-
-					<!-- Input 1 -->
-					<div class="form-group">
-						<input class="form-control" pattern="^[1-9][0-9]{1,2}$" name="School" type="text" placeholder="Школа (24)" required>
-					</div> <!-- /.form-group -->
-
-					<!-- Input 2 -->
-					<div class="form-group">
-						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс (11а)" required>
-					</div> <!-- /.form-group -->
-
-					<!-- Input 3 -->
-					<div class="form-group">
-						<input class="form-control"  pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" name="Email" type="text" placeholder="Email (igor@example.com)" required>
-					</div> <!-- /.form-group -->
-
-					<div class="validator">
-						<input class="validator" type="text" name="validator" value="">
-					</div> 
-
-					<!-- Button -->
-					<button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
-
-				</form> <!-- /.sign-in-up-form -->
-				
-            </div> <!-- /.col-md-12 -->
-			
-		  </div> <!-- /.row -->
-          
-        </section> <!-- /.sign-in-up-content -->
-        
-		</div> <!-- /.container -->
-			
-    </section> 
-	<!-- /.sign-in-up-section -->
 	
 	<!-- list -->
-	<section class="features-section magic100" id="section-4">
+	<section class="services-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
 		<div id="cent-out">
 		<div id="cent-in">
@@ -311,7 +271,7 @@
 	
 	
 	<!-- Map -->
-	<section class = "services-section map" id="section-5" >
+	<section class = "features-section map" id="section-5" >
 		<div class="container">
 			<div class="row">
 				<br>
