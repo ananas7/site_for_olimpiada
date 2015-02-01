@@ -37,6 +37,7 @@
 
     <!-- Modernizr Scripts -->
    <!-- <script src="javascript/vendor/modernizr-2.7.1.min.js"></script> -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body class="index" id="to-top" data-spy="scroll" data-target="#myScrollspy">
 
@@ -64,11 +65,7 @@
 		<div class="row magic">
 			<div class="row">			
 				<div><h1> Олимпиада "программированию"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
-			</div><!-- row -->   
-			<div class="row">
-				 <a class="btn btn-danger" href="#section-1">Узнать больше</a>           
-				 <a class="btn btn-danger" href="#section-3">Зарегистрироваться</a>
-			</div> <!-- row -->
+			</div><!-- row -->
 		</div>
       </div> <!-- /.container -->
     </header>
@@ -234,37 +231,40 @@
 	<section class="services-section magic100" id="section-4">
 		<h1 align="center">Список участников</h1>
 		<div id="cent-out">
-		<div id="cent-in">
-			<div class="table-responsive spisok">
-				<table class="table table-hover table-stripe" >
-					<thead>
-					  <tr>
-						<th>Фамилия</th>
-						<th>Имя</th>
-						<th>Школа</th>
-					  </tr>
-					</thead>
-					<tbody class="scrol">
-						<?php
-							function GetMyConnection() {
-								global $g_link;
-								if( $g_link )
+			<div id="cent-in">
+				<div class="table-responsive spisok">
+					<table class="table table-hover table-stripe" >
+						<thead>
+						  <tr>
+							<th>Фамилия</th>
+							<th>Имя</th>
+							<th>Школа</th>
+						  </tr>
+						</thead>
+						<tbody class="scrol">
+							<?php
+								function GetMyConnection() {
+									global $g_link;
+									if( $g_link )
+										return $g_link;
+									$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
+									mysql_select_db('olimp', $g_link) or die('Could not select database.');
 									return $g_link;
-								$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-								mysql_select_db('olimp', $g_link) or die('Could not select database.');
-								return $g_link;
-							}
-							$db=GetMyConnection();
-							$query = mysql_query("SELECT * FROM users WHERE modered = 1");
-							while ($data = mysql_fetch_array($query)) {
-								echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-							}	
-						?>
-					</tbody>
-				</table>
+								}
+								$db=GetMyConnection();
+								$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+								while ($data = mysql_fetch_array($query)) {
+									echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
+								}	
+							?>
+						</tbody>
+					</table>
+				</div>
+				<br><br>
+				<div class="row">
+					 <a class="btn btn-danger" href="#section-1">Регистрация</a>
+				</div> <!-- row -->			
 			</div>
-			<br><br>			
-		</div>
 		</div>
 	</section>
 	<!-- end list -->

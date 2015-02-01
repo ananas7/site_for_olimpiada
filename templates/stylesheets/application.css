@@ -1158,9 +1158,9 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-family: Open Sans, inherit;
+  font-size: Open Sans, inherit;
+  line-height: Open Sans, inherit;
 }
 
 a {
@@ -1248,7 +1248,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: Open Sans, inherit;
   font-weight: 500;
   line-height: 1.1;
   color: #1b1f23;
@@ -6820,4 +6820,5 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 }
 #section-4{
 	overflow: auto;
+	overflow-x:hidden;
 }
