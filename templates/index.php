@@ -66,6 +66,10 @@
 			<div class="row">			
 				<div><h1> Олимпиада "программирование"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
 			</div><!-- row -->
+			<br><br>
+			<div class="row">
+				 <a class="btn btn-danger" href="#section-1">Регистрация</a>
+			</div>		
 		</div>
       </div> <!-- /.container -->
     </header>

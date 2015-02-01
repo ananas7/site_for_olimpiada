@@ -44,12 +44,13 @@
       <div class="container">
 		<div class="row magic"></div>
 		<div class="row magic">
+			
 			<div class="row">			
 				<div><h1>Поздравляем, вы успешно зарегестрированы. Ждем вас на олимпиаде!<h1></div>
-			</div><!-- row -->   
+			</div>  
 			<div class="row">
 				<a class="btn btn-danger" href="/">Вернуться на главную</a> 
-			</div> <!-- row -->
+			</div>
 		</div>
 		<div class="row magic"></div>
       </div> <!-- /.container -->

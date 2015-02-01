@@ -6806,7 +6806,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	margin-bottom: 5px;
 }
 .magic100 {
-
+	min-height: 100vh;
 }
 #section-3{
 	height: 800px;
