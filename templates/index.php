@@ -64,7 +64,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада "программированию"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
+				<div><h1> Олимпиада "программирование"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
 			</div><!-- row -->
 		</div>
       </div> <!-- /.container -->
@@ -228,10 +228,10 @@
 	<!-- /.features-section -->
 	
 	<!-- list -->
-	<section class="services-section magic100" id="section-4">
-		<h1 align="center">Список участников</h1>
+	<section class="services-section magic100" id="section-4">		
 		<div id="cent-out">
 			<div id="cent-in">
+				<h1>Список участников</h1>
 				<div class="table-responsive spisok">
 					<table class="table table-hover table-stripe" >
 						<thead>
@@ -259,11 +259,12 @@
 							?>
 						</tbody>
 					</table>
+					<br><br>
+					<div class="row">
+						 <a class="btn btn-danger" href="#section-1">Регистрация</a>
+					</div>		
 				</div>
-				<br><br>
-				<div class="row">
-					 <a class="btn btn-danger" href="#section-1">Регистрация</a>
-				</div> <!-- row -->			
+				<br><br>	
 			</div>
 		</div>
 	</section>

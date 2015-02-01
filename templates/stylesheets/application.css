@@ -6816,7 +6816,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	float: right;
 }
 #cent-in{
-	margin-left:-250px;	
+	margin-left:-250px;
+	width:500px;
 }
 #section-4{
 	overflow: auto;
