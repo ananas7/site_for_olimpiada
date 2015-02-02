@@ -6814,8 +6814,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	min-height: 640px;
 	max-height: 1080px;
 }
-#section-3{
-	height: 800px;
+.magic100-t {
+	min-height: 640px;
 }
 #cent-out{
 	width:50%;
@@ -6825,7 +6825,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	margin-left:-250px;
 	width:500px;
 }
-.scrol{
+#section-4{
 	overflow: auto;
 	overflow-x:hidden;
 }

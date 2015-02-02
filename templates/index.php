@@ -231,7 +231,7 @@
 	<!-- /.features-section -->
 	
 	<!-- list -->
-	<section class="services-section magic100" id="section-4">		
+	<section class="services-section magic100-t" id="section-4">		
 		<div id="cent-out">
 			<div id="cent-in">
 				<h1>Список участников</h1>
