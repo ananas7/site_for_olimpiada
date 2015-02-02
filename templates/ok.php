@@ -91,7 +91,9 @@
 						</tbody>
 					</table>	
 				</div>
-				<br><br>	
+				<br>
+				<p> Добавлние вв таблицу происходит после модерации. </p>
+				<br>	
 			</div>
 		</div>
 	</section>
@@ -99,33 +101,20 @@
     
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
-
-    <div class="container">
-
-        <div class="row">
-
-        <div class="col-md-6">
-            
-            <!-- Footer 1 -->
-            
-            <!-- Social media links -->
-            <ul class="social-media-links">
-			
-              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
-			  
-            </ul> <!-- /.social-media-links -->
-
-        </div> <!-- /.col-md-4 -->
-
-		<div  class="col-md-6">
-			<p><strong>Обратная связь</strong><br>
-			<a href="">ilylomte7@gmail.com</a><br>
-			<a href="">joni852963@gmail.com</a></p>
-		</div>
-		  
-		</div> <!-- /.row -->
-
-	</div> <!-- /.container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div  class="col-md-4">
+					<p><strong>Обратная связь</strong><br>
+					<a href="">ilylomte7@gmail.com</a><br>
+					<a href="">joni852963@gmail.com</a></p>
+				</div>
+				<div class="col-md-4">
+					<a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+				</div>
+				<div class="col-md-2"></div>			  
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
 
     </footer>
 	<!-- /.footer-section -->

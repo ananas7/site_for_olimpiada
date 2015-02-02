@@ -6806,7 +6806,13 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	margin-bottom: 5px;
 }
 .magic100 {
-	min-height: 100vh;
+	min-height: 640px;
+	height: 100vh;
+	max-height: 1080px;
+}
+.magic100-f {
+	min-height: 640px;
+	max-height: 1080px;
 }
 #section-3{
 	height: 800px;

@@ -64,7 +64,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада "программирование"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
+				<div><h1> Олимпиада "Программирование"<br>Волжского Гуманитарного Института<br>филиала ВолГУ</h1></div>
 			</div><!-- row -->
 			<br><br>
 			<div class="row">
@@ -76,7 +76,7 @@
 	<!-- /.jumbotron -->
 
     <!-- Services -->
-    <section class="services-section magic100" id="section-1">
+    <section class="services-section magic100-f" id="section-1">
 		<div class="container">
 			<div class="col-md-5">
 				<h1 align = "left">string Info() {</h1>
@@ -93,25 +93,25 @@
 				
 					<!-- Input 0 -->
 					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="LastName" type="text" placeholder="Фамилия (Иванов)" required>
+						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="LastName" type="text" placeholder="Фамилия" required>
 					</div>
 					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="FirstName" type="text" placeholder="Имя (Игорь)" required>
+						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="FirstName" type="text" placeholder="Имя" required>
 					</div><!-- /.form-group -->
 
 					<!-- Input 1 -->
 					<div class="form-group">
-						<input class="form-control" name="School" type="text" placeholder="Школа (24)" required>
+						<input class="form-control" name="School" type="text" placeholder="Школа" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 2 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс (11а)" required>
+						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 3 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" name="Email" type="text" placeholder="Email (igor@example.com)" required>
+						<input class="form-control"  pattern="^[^\s]{1,}@[^\s]{1,}$" name="Email" type="text" placeholder="Email" required>
 					</div> <!-- /.form-group -->
 
 					<div class="validator">
@@ -129,7 +129,7 @@
 
 
     <!-- Features -->
-    <section class="features-section magic100" id="section-2">
+    <section class="features-section" id="section-2">
 			
 			<div class="container">
 			<h1> image[] Gallery() { </h1>
@@ -290,33 +290,20 @@
 	
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
-
-    <div class="container">
-
-        <div class="row">
-
-        <div class="col-md-6">
-            
-            <!-- Footer 1 -->
-            
-            <!-- Social media links -->
-            <ul class="social-media-links">
-			
-              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
-			  
-            </ul> <!-- /.social-media-links -->
-
-        </div> <!-- /.col-md-4 -->
-
-		<div  class="col-md-6">
-			<p><strong>Обратная связь</strong><br>
-			<a href="">ilylomte7@gmail.com</a><br>
-			<a href="">joni852963@gmail.com</a></p>
-		</div>
-		  
-		</div> <!-- /.row -->
-
-	</div> <!-- /.container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div  class="col-md-4">
+					<p><strong>Обратная связь</strong><br>
+					<a href="">ilylomte7@gmail.com</a><br>
+					<a href="">joni852963@gmail.com</a></p>
+				</div>
+				<div class="col-md-4">
+					<a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+				</div>
+				<div class="col-md-2"></div>			  
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
 
     </footer>
 	<!-- /.footer-section -->
