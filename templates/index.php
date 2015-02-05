@@ -79,19 +79,19 @@
     <section class="services-section magic100-f" id="section-1">
 		<div class="container">
 			<div class="col-md-5">
-				<h1 align = "left">string Info() {</h1>
+				<h1 align = "left" style="color:#969191;">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
-					<ul>
-                        <li>Олимпиада ВГИ по программированию</li>
-                        <li>8&ndash;11 классы</li>
-                        <li>21 февраля 2015 года, 09:00</li>
-                        <li><a href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></li>
-                        <li>Ждем всех желающих!</li>
-                        <li>Будут призы!</li>
+					<ul align="left">
+                        <li class="liinfa">Олимпиада ВГИ по программированию</li>
+                        <li class="liinfa">8&ndash;11 классы</li>
+                        <li class="liinfa">21 февраля 2015 года, 09:00</li>
+                        <li class="liinfa"><a href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></li>
+                        <li class="liinfa">Ждем всех желающих!</li>
+                        <li class="liinfa">Будут призы!</li>
                     </ul>
 				</div>
-				<h1 align = "left">}</h1>
+				<h1 align = "left" style="color:#969191;">}</h1>
 				<footer class="footer-section" role="contentinfo">
                     <div class="container">
                         <div class="row">
@@ -154,7 +154,7 @@
     <section class="features-section" id="section-2">
 			
 			<div class="container">
-			<h1> image[] Gallery() { </h1>
+			<h1 style="color:#969191;"> image[] Gallery() { </h1>
 			<div id="hujallery">
 			<div id="grid-gallery" class="grid-gallery scroll">
 				<section class="grid-wrap">
@@ -246,7 +246,7 @@
 				</section><!-- // slideshow -->
 			</div><!-- // grid-gallery -->
 			</div>
-				<h1> } </h1>
+				<h1 style="color:#969191;"> } </h1>
 		 </div> <!-- /.container -->
 
     </section>

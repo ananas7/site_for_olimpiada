@@ -6829,3 +6829,11 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	overflow: auto;
 	overflow-x:hidden;
 }
+li {
+    list-style-type: none; 
+}
+.liinfa:before {
+    color: #969191;
+    content: "● ";
+    padding-right: 10px;
+}
