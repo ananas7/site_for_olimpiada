@@ -82,13 +82,13 @@
 				<h1 align = "left" style="color:#969191;">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
-					<ul align="left">
-                        <li class="liinfa">Олимпиада ВГИ по программированию</li>
-                        <li class="liinfa">8&ndash;11 классы</li>
-                        <li class="liinfa">21 февраля 2015 года, 09:00</li>
-                        <li class="liinfa"><a href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></li>
-                        <li class="liinfa">Ждем всех желающих!</li>
-                        <li class="liinfa">Будут призы!</li>
+					<ul>
+                        <li><span>Олимпиада ВГИ по программированию</span></li>
+                        <li><span>8&ndash;11 классы</span></li>
+                        <li><span>21 февраля 2015 года, 09:00</span></li>
+                        <li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
+                        <li><span>Ждем всех желающих!</span></li>
+                        <li><span>Будут призы!</span></li>
                     </ul>
 				</div>
 				<h1 align = "left" style="color:#969191;">}</h1>
@@ -97,8 +97,8 @@
                         <div class="row">
                             <div  class="col-md-4">
                                 <p><strong>Обратная связь</strong><br>
-                                <a href="">ilylomte7@gmail.com</a><br>
-                                <a href="">joni852963@gmail.com</a></p>
+                                <a href="mailto:ilylomte7@gmail.com">Илья Ломтев</a><br>
+                                <a href="mailto:joni852963@gmail.com">Евгений Годунов</a>
                             </div>
                             <div class="col-md-4">
                                 <a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
@@ -133,7 +133,7 @@
 
 					<!-- Input 3 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[^\s]{1,}@[^\s]{1,}$" name="Email" type="text" placeholder="Email" required>
+						<input class="form-control" name="Email" type="email" placeholder="Email">
 					</div> <!-- /.form-group -->
 
 					<div class="validator">
