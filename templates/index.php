@@ -64,7 +64,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада "Программирование"<br>Волжского Гуманитарного Института<br>филиала ВолГУ</h1></div>
+				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного Института<br>филиала ВолГУ</h1></div>
 			</div><!-- row -->
 			<br><br>
 			<div class="row">
@@ -82,9 +82,31 @@
 				<h1 align = "left">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
-					<p align = "left">Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института состоится 21 февраля 2015 года. Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить <a href="#section-5">в&nbsp;главном&nbsp;корпусе&nbsp;ВГИ</a> с 09:00 до 10:00. Ждем всех желающих! Призы для победителей и участников!</p>
+					<ul>
+                        <li>Олимпиада ВГИ по программированию</li>
+                        <li>8&ndash;11 классы</li>
+                        <li>21 февраля 2015 года, 09:00</li>
+                        <li><a href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></li>
+                        <li>Ждем всех желающих!</li>
+                        <li>Будут призы!</li>
+                    </ul>
 				</div>
 				<h1 align = "left">}</h1>
+				<footer class="footer-section" role="contentinfo">
+                    <div class="container">
+                        <div class="row">
+                            <div  class="col-md-4">
+                                <p><strong>Обратная связь</strong><br>
+                                <a href="">ilylomte7@gmail.com</a><br>
+                                <a href="">joni852963@gmail.com</a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+                            </div>
+                            <div class="col-md-2"></div>			  
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </footer>
 			</div>
 			<div class="col-md-2"></div>
 			<div class="col-md-5">
@@ -106,7 +128,7 @@
 
 					<!-- Input 2 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс" required>
+						<input class="form-control"  pattern="^[1-9][0-1]{0,1}([а-я]){0,1}$" name="Class" type="text" placeholder="Класс" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 3 -->
@@ -286,27 +308,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- end Map -->
-	
-    <!-- Footer -->
-    <footer class="footer-section" role="contentinfo">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div  class="col-md-4">
-					<p><strong>Обратная связь</strong><br>
-					<a href="">ilylomte7@gmail.com</a><br>
-					<a href="">joni852963@gmail.com</a></p>
-				</div>
-				<div class="col-md-4">
-					<a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
-				</div>
-				<div class="col-md-2"></div>			  
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-
-    </footer>
-	<!-- /.footer-section -->
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
