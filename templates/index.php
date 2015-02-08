@@ -82,7 +82,11 @@
 				<h1 align = "left" style="color:#969191;">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
+<<<<<<< HEAD
 					<ul class="left-aligned">
+=======
+					<ul>
+>>>>>>> origin/master
                         <li><span>Олимпиада ВГИ по программированию</span></li>
                         <li><span>8&ndash;11 классы</span></li>
                         <li><span>21 февраля 2015 года, 09:00</span></li>
