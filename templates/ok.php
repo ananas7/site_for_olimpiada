@@ -46,7 +46,7 @@
 		<div class="row magic">
 			
 			<div class="row">			
-				<div><h1>Поздравляем, вы успешно зарегестрированы. Ждем вас на олимпиаде!<h1></div>
+				<div><h1>Поздравляем, вы успешно зарегистрированы. Ждем вас на олимпиаде!<h1></div>
 			</div>  
 			<div class="row">
 				<a class="btn btn-danger" href="/">Вернуться на главную</a> 
@@ -59,7 +59,7 @@
 
 	
 	<!-- list -->
-	<section class="services-section" id="section-4">		
+	<section class="services-section magic100-t" id="section-4">		
 		<div id="cent-out">
 			<div id="cent-in">
 				<h1>Список участников</h1>
@@ -83,7 +83,10 @@
 									return $g_link;
 								}
 								$db=GetMyConnection();
-								$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+								mysql_query("SET NAMES 'utf8';"); 
+								mysql_query("SET CHARACTER SET 'utf8';"); 
+								mysql_query("SET SESSION collation_connection = 'utf8_general_ci';"); 
+								$query = mysql_query("SELECT * FROM users WHERE moderated = 1");
 								while ($data = mysql_fetch_array($query)) {
 									echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
 								}	
@@ -91,7 +94,9 @@
 						</tbody>
 					</table>	
 				</div>
-				<br><br>	
+				<br>
+					<p>Добавление в таблицу происходит после модерации.</p>
+				<br>	
 			</div>
 		</div>
 	</section>
@@ -99,33 +104,20 @@
     
     <!-- Footer -->
     <footer class="footer-section" role="contentinfo">
-
-    <div class="container">
-
-        <div class="row">
-
-        <div class="col-md-6">
-            
-            <!-- Footer 1 -->
-            
-            <!-- Social media links -->
-            <ul class="social-media-links">
-			
-              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
-			  
-            </ul> <!-- /.social-media-links -->
-
-        </div> <!-- /.col-md-4 -->
-
-		<div  class="col-md-6">
-			<p><strong>Обратная связь</strong><br>
-			<a href="">ilylomte7@gmail.com</a><br>
-			<a href="">joni852963@gmail.com</a></p>
-		</div>
-		  
-		</div> <!-- /.row -->
-
-	</div> <!-- /.container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div  class="col-md-4">
+					<p><strong>Обратная связь</strong><br>
+					<a href="">ilylomte7@gmail.com</a><br>
+					<a href="">joni852963@gmail.com</a></p>
+				</div>
+				<div class="col-md-4">
+					<a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+				</div>
+				<div class="col-md-2"></div>			  
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
 
     </footer>
 	<!-- /.footer-section -->

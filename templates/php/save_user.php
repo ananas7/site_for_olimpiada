@@ -37,6 +37,9 @@ if (empty($lastname) or empty($firstname) or empty($school) or empty($class) or 
 
 include ("bd.php");
 $db=GetMyConnection();
+mysql_query("SET NAMES 'utf8';"); 
+mysql_query("SET CHARACTER SET 'utf8';"); 
+mysql_query("SET SESSION collation_connection = 'utf8_general_ci';"); 
 $result = mysql_query("SELECT id FROM users WHERE email='".mysql_real_escape_string($email)."'",$db);
 $myrow = mysql_fetch_array($result);
 if (!empty($myrow['id'])) {

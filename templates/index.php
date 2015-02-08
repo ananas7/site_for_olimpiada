@@ -64,7 +64,7 @@
 		</div>
 		<div class="row magic">
 			<div class="row">			
-				<div><h1> Олимпиада "программирование"<br>Волжского Гуманитарного Института (ф) ВолГУ</h1></div>
+				<div><h1> Олимпиада по программированию<br>Волжского Гуманитарного Института<br>филиала ВолГУ</h1></div>
 			</div><!-- row -->
 			<br><br>
 			<div class="row">
@@ -76,42 +76,64 @@
 	<!-- /.jumbotron -->
 
     <!-- Services -->
-    <section class="services-section magic100" id="section-1">
+    <section class="services-section magic100-f" id="section-1">
 		<div class="container">
 			<div class="col-md-5">
-				<h1 align = "left">string Info() {</h1>
+				<h1 align = "left" style="color:#969191;">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
-					<p align = "left">Ежегодная олимпиада по программированию для школьников от Волжского Гуманитарного Института состоится 21 февраля 2015 года. Приглашаются учащиеся 8 &ndash; 11 классов, окончательная регистрация участников будет проходить <a href="#section-5">в&nbsp;главном&nbsp;корпусе&nbsp;ВГИ</a> с 09:00 до 10:00. Ждем всех желающих! Призы для победителей и участников!</p>
+					<ul class="left-aligned">
+                        <li><span>Олимпиада ВГИ по программированию</span></li>
+                        <li><span>8&ndash;11 классы</span></li>
+                        <li><span>21 февраля 2015 года, 09:00</span></li>
+                        <li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
+                        <li><span>Ждем всех желающих!</span></li>
+                        <li><span>Будут призы!</span></li>
+                    </ul>
 				</div>
-				<h1 align = "left">}</h1>
+				<h1 align = "left" style="color:#969191;">}</h1>
+				<footer class="footer-section" role="contentinfo">
+                    <div class="container">
+                        <div class="row">
+                            <div  class="col-md-4">
+                                <p><strong>Обратная связь</strong><br>
+                                <a href="mailto:ilylomte7@gmail.com">Илья Ломтев</a><br>
+                                <a href="mailto:joni852963@gmail.com">Евгений Годунов</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+                            </div>
+                            <div class="col-md-2"></div>			  
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </footer>
 			</div>
 			<div class="col-md-2"></div>
 			<div class="col-md-5">
 				<h4 class="text-center"></h4>					
-				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form">
+				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form" accept-charset="utf-8">
 				
 					<!-- Input 0 -->
 					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="LastName" type="text" placeholder="Фамилия (Иванов)" required>
+						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="LastName" type="text" placeholder="Фамилия" required>
 					</div>
 					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-я]{1,}$" name="FirstName" type="text" placeholder="Имя (Игорь)" required>
+						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="FirstName" type="text" placeholder="Имя" required>
 					</div><!-- /.form-group -->
 
 					<!-- Input 1 -->
 					<div class="form-group">
-						<input class="form-control" name="School" type="text" placeholder="Школа (24)" required>
+						<input class="form-control" name="School" type="text" placeholder="Школа" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 2 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[1-9][0-1]{0,1}[а-я]$" name="Class" type="text" placeholder="Класс (11а)" required>
+						<input class="form-control"  pattern="^[1-9][0-1]{0,1}([а-я]){0,1}$" name="Class" type="text" placeholder="Класс" required>
 					</div> <!-- /.form-group -->
 
 					<!-- Input 3 -->
 					<div class="form-group">
-						<input class="form-control"  pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" name="Email" type="text" placeholder="Email (igor@example.com)" required>
+						<input class="form-control" name="Email" type="email" placeholder="Email">
 					</div> <!-- /.form-group -->
 
 					<div class="validator">
@@ -129,10 +151,10 @@
 
 
     <!-- Features -->
-    <section class="features-section magic100" id="section-2">
+    <section class="features-section" id="section-2">
 			
 			<div class="container">
-			<h1> image[] Gallery() { </h1>
+			<h1 style="color:#969191;"> image[] Gallery() { </h1>
 			<div id="hujallery">
 			<div id="grid-gallery" class="grid-gallery scroll">
 				<section class="grid-wrap">
@@ -224,14 +246,14 @@
 				</section><!-- // slideshow -->
 			</div><!-- // grid-gallery -->
 			</div>
-				<h1> } </h1>
+				<h1 style="color:#969191;"> } </h1>
 		 </div> <!-- /.container -->
 
     </section>
 	<!-- /.features-section -->
 	
 	<!-- list -->
-	<section class="services-section magic100" id="section-4">		
+	<section class="services-section magic100-t" id="section-4">		
 		<div id="cent-out">
 			<div id="cent-in">
 				<h1>Список участников</h1>
@@ -255,7 +277,10 @@
 									return $g_link;
 								}
 								$db=GetMyConnection();
-								$query = mysql_query("SELECT * FROM users WHERE modered = 1");
+								mysql_query("SET NAMES 'utf8';"); 
+								mysql_query("SET CHARACTER SET 'utf8';"); 
+								mysql_query("SET SESSION collation_connection = 'utf8_general_ci';"); 
+								$query = mysql_query("SELECT * FROM users WHERE moderated = 1");
 								while ($data = mysql_fetch_array($query)) {
 									echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
 								}	
@@ -286,40 +311,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- end Map -->
-	
-    <!-- Footer -->
-    <footer class="footer-section" role="contentinfo">
-
-    <div class="container">
-
-        <div class="row">
-
-        <div class="col-md-6">
-            
-            <!-- Footer 1 -->
-            
-            <!-- Social media links -->
-            <ul class="social-media-links">
-			
-              <li><a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a></li>
-			  
-            </ul> <!-- /.social-media-links -->
-
-        </div> <!-- /.col-md-4 -->
-
-		<div  class="col-md-6">
-			<p><strong>Обратная связь</strong><br>
-			<a href="">ilylomte7@gmail.com</a><br>
-			<a href="">joni852963@gmail.com</a></p>
-		</div>
-		  
-		</div> <!-- /.row -->
-
-	</div> <!-- /.container -->
-
-    </footer>
-	<!-- /.footer-section -->
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
