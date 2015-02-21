@@ -5944,7 +5944,7 @@ tbody.collapse.in {
 
 .services-section {
   background: white;
-  text-align: center;
+  text-align: left;
   padding: 100px 0;
 }
 .services-section .row.row-padding {
@@ -6838,4 +6838,8 @@ li {
 }
 .local-link:hover, .local-link:focus {
     border-bottom-color: #006a64;
+    text-decoration: none;
+}
+ul.left-aligned {
+    text-align: left;
 }

@@ -82,16 +82,19 @@
 				<h1 align = "left" style="color:#969191;">string Info() {</h1>
 				<div class="col-md-1"></div>
 				<div class="col-md-11">
-<<<<<<< HEAD
 					<ul class="left-aligned">
-=======
-					<ul>
->>>>>>> origin/master
                         <li><span>Олимпиада ВГИ по программированию</span></li>
+			<li><span>21 февраля 2015 года, 09:00</span></li>
+			<li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
                         <li><span>8&ndash;11 классы</span></li>
-                        <li><span>21 февраля 2015 года, 09:00</span></li>
-                        <li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
-                        <li><span>Ждем всех желающих!</span></li>
+						<li><span>Языки программирования:</span>
+							<ul class="left-aligned">
+								<li><span>C++ (C++11, G++ 4.9.1)</span></li>
+								<li><span>Java (JDK 1.8.0)</span></li>
+								<li><span>Pascal (Free Pascal 2.6.4)</span></li>
+							</ul>
+						</li>
+          		<li><span>Ждем всех желающих!</span></li>
                         <li><span>Будут призы!</span></li>
                     </ul>
 				</div>
@@ -264,6 +267,7 @@
 				<div class="table-responsive spisok">
 					<table class="table table-hover table-stripe" >
 						<thead>
+						  &nbsp;&nbsp;&nbsp;
 						  <tr>
 							<th>Фамилия</th>
 							<th>Имя</th>
