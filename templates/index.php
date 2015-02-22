@@ -41,22 +41,7 @@
   </head>
   <body class="index" id="to-top" data-spy="scroll" data-target="#myScrollspy">
 
-    <!-- Side nav nav-side-nav nav-stacked-->
-    <div class="side-nav" id="myScrollspy">
-      <ul class="nav nav-tabs nav-stacked" role="tablist">
-		<li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Начало" data-placement="left"><image src="images/favicon/home1.png"/></a></li>
-         <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Регистрация" data-placement="left"><image src="images/favicon/pen1.png"/></a></li>
-        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Галерея" data-placement="left"><image src="images/favicon/image1.png"/></a></li>       
-        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Список" data-placement="left"><image src="images/favicon/list-view1.png"/></a></li>
-		<li><a class="tooltip-side-nav" href="#section-5" title="" data-original-title="Карты" data-placement="left"><image src="images/favicon/location1.png"/></a></li>
-      </ul>
-    </div>
-	<!-- /.side-nav -->
-
-
-
-     
-    <!-- Jumbotron -->
+     <!-- Jumbotron -->
     <header class="jumbotron magic100" role="banner">
       <div class="container">
 		<div class="row magic">
@@ -68,7 +53,7 @@
 			</div><!-- row -->
 			<br><br>
 			<div class="row">
-				 <a class="btn btn-danger" href="#section-1">Регистрация</a>
+				 <a class="btn btn-danger" href="#section-1">Условия задач</a>
 			</div>		
 		</div>
       </div> <!-- /.container -->
@@ -78,234 +63,51 @@
     <!-- Services -->
     <section class="services-section magic100-f" id="section-1">
 		<div class="container">
-			<div class="col-md-5">
-				<h1 align = "left" style="color:#969191;">string Info() {</h1>
+			<div class="row"><h1 align = "left" style="color:#969191;">string Info() {</h1></div><br>
+			<div class="row">
 				<div class="col-md-1"></div>
-				<div class="col-md-11">
+				<div class="col-md-10">
 					<ul class="left-aligned">
-                        <li><span>Олимпиада ВГИ по программированию</span></li>
-			<li><span>21 февраля 2015 года, 09:00</span></li>
-			<li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
-                        <li><span>8&ndash;11 классы</span></li>
-						<li><span>Языки программирования:</span>
-							<ul class="left-aligned">
-								<li><span>C++ (C++11, G++ 4.9.1)</span></li>
-								<li><span>Java (JDK 1.8.0)</span></li>
-								<li><span>Pascal (Free Pascal 2.6.4)</span></li>
-							</ul>
-						</li>
-          		<li><span>Ждем всех желающих!</span></li>
-                        <li><span>Будут призы!</span></li>
-                    </ul>
+						<li><span>Разбор олимпиады ВГИ по программированию</span></li>
+						<li><span>28 февраля 2015 года, 13:30</span></li>
+						<li><span><a class="local-link" href="http://olymp.vgi.volsu.ru/#section-5">Волжский Гуманитарный Институт</a></span></li>
+						<li><span>Будут призы!</span></li>
+					</ul>
 				</div>
-				<h1 align = "left" style="color:#969191;">}</h1>
-				<footer class="footer-section" role="contentinfo">
-                    <div class="container">
-                        <div class="row">
-                            <div  class="col-md-4">
-                                <p><strong>Обратная связь</strong><br>
-                                <a href="mailto:ilylomte7@gmail.com">Илья Ломтев</a><br>
-                                <a href="mailto:joni852963@gmail.com">Евгений Годунов</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
-                            </div>
-                            <div class="col-md-2"></div>			  
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
-                </footer>
 			</div>
-			<div class="col-md-2"></div>
-			<div class="col-md-5">
-				<h4 class="text-center"></h4>					
-				<form class="sign-in-up-form"   method="post" action="php\save_user.php" role="form" accept-charset="utf-8">
-				
-					<!-- Input 0 -->
-					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="LastName" type="text" placeholder="Фамилия" required>
-					</div>
-					<div class="form-group">
-						<input class="form-control" pattern="^[А-Я][а-яё]{1,}(\s[А-ЯЁ][а-яё]{1,}){0,1}$" name="FirstName" type="text" placeholder="Имя" required>
-					</div><!-- /.form-group -->
-
-					<!-- Input 1 -->
-					<div class="form-group">
-						<input class="form-control" name="School" type="text" placeholder="Школа" required>
-					</div> <!-- /.form-group -->
-
-					<!-- Input 2 -->
-					<div class="form-group">
-						<input class="form-control"  pattern="^[1-9][0-1]{0,1}([а-я]){0,1}$" name="Class" type="text" placeholder="Класс" required>
-					</div> <!-- /.form-group -->
-
-					<!-- Input 3 -->
-					<div class="form-group">
-						<input class="form-control" name="Email" type="email" placeholder="Email">
-					</div> <!-- /.form-group -->
-
-					<div class="validator">
-						<input class="validator" type="text" name="validator" value="">
-					</div> 
-
-					<!-- Button -->
-					<button class="btn btn-danger btn-block" type="submit">Зарегистрироваться</button>
-
-				</form> <!-- /.sign-in-up-form -->
-			</div>
+			<div class="row"><h1 align = "left" style="color:#969191;">}</h1></div>
+			<br><br>
+			<a class="btn btn-danger" href="olymp2015.pdf">Скачать условия</a>
+			<footer class="footer-section" role="contentinfo">
+				<div class="container">
+					<div class="row">
+						<div  class="col-md-4">
+							<p><strong>Обратная связь</strong><br>
+							<a href="mailto:ilylomte7@gmail.com">Илья Ломтев</a><br>
+							<a href="mailto:joni852963@gmail.com">Евгений Годунов</a>
+						</div>
+						<div class="col-md-4">
+							<a href="http://vk.com/matfak_vgi"><image src="images/vk.png"/></a>
+						</div>
+						<div class="col-md-2"></div>			  
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+			</footer>
 		</div> <!-- /.container -->
 	</section>
 	<!-- /.services-section -->
 
 
     <!-- Features -->
-    <section class="features-section" id="section-2">
-			
+    <section class="features-section" id="section-2">			
 			<div class="container">
 			<h1 style="color:#969191;"> image[] Gallery() { </h1>
-			<div id="hujallery">
-			<div id="grid-gallery" class="grid-gallery scroll">
-				<section class="grid-wrap">
-					<ul class="grid">
-						<li class="grid-sizer"></li><!-- for Masonry column width -->
-						<li>
-							<figure><img src="img/thumb/1.jpg" alt="img01"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/2.jpg" alt="img02"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/3.jpg" alt="img03"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/4.jpg" alt="img04"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/5.jpg" alt="img05"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/6.jpg" alt="img06"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/7.jpg" alt="img07"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/8.jpg" alt="img08"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/9.jpg" alt="img09"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/10.jpg" alt="img10"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/11.jpg" alt="img11"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/thumb/12.jpg" alt="img12"/></figure>
-						</li>
-					</ul>
-				</section><!-- // grid-wrap -->
-				<section class="slideshow">
-					<ul>
-						<li>
-							<figure><img src="img/large/1.jpg" alt="img01"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/2.jpg" alt="img02"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/3.jpg" alt="img03"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/4.jpg" alt="img04"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/5.jpg" alt="img05"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/6.jpg" alt="img06"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/7.jpg" alt="img07"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/8.jpg" alt="img08"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/9.jpg" alt="img09"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/10.jpg" alt="img10"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/11.jpg" alt="img11"/></figure>
-						</li>
-						<li>
-							<figure><img src="img/large/12.jpg" alt="img12"/></figure>
-						</li>
-					</ul>
-					<nav>
-						<span class="icon nav-prev"></span>
-						<span class="icon nav-next"></span>
-						<span class="icon nav-close"></span>
-					</nav>
-					
-				</section><!-- // slideshow -->
-			</div><!-- // grid-gallery -->
-			</div>
-				<h1 style="color:#969191;"> } </h1>
+			<?php include("./php/gallery.php"); ?>
+			<h1 style="color:#969191;"> } </h1>
 		 </div> <!-- /.container -->
 
     </section>
-	<!-- /.features-section -->
-	
-	<!-- list -->
-	<section class="services-section magic100-t" id="section-4">		
-		<div id="cent-out">
-			<div id="cent-in">
-				<h1>Список участников</h1>
-				<div class="table-responsive spisok">
-					<table class="table table-hover table-stripe" >
-						<thead>
-						  &nbsp;&nbsp;&nbsp;
-						  <tr>
-							<th>Фамилия</th>
-							<th>Имя</th>
-							<th>Школа</th>
-						  </tr>
-						</thead>
-						<tbody class="scrol">
-							<?php
-								function GetMyConnection() {
-									global $g_link;
-									if( $g_link )
-										return $g_link;
-									$g_link = mysql_connect( 'localhost', 'olimp', 'c2km|h@y$') or die('Could not connect to server.' );
-									mysql_select_db('olimp', $g_link) or die('Could not select database.');
-									return $g_link;
-								}
-								$db=GetMyConnection();
-								mysql_query("SET NAMES 'utf8';"); 
-								mysql_query("SET CHARACTER SET 'utf8';"); 
-								mysql_query("SET SESSION collation_connection = 'utf8_general_ci';"); 
-								$query = mysql_query("SELECT * FROM users WHERE moderated = 1");
-								while ($data = mysql_fetch_array($query)) {
-									echo '<tr><td> '.$data['lastname']." </td><td> ". $data['firstname']." </td><td>".$data['school'].' </td></tr>';
-								}	
-							?>
-						</tbody>
-					</table>
-					<br><br>
-					<div class="row">
-						 <a class="btn btn-danger" href="#section-1">Регистрация</a>
-					</div>		
-				</div>
-				<br><br>	
-			</div>
-		</div>
-	</section>
-	<!-- end list -->
-	
+	<!-- /.features-section -->	
 	
 	<!-- Map -->
 	<section class = "features-section map" id="section-5" >
@@ -319,7 +121,6 @@
 			</div>
 		</div>
 	</section>
-
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
